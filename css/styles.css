@@ -136,6 +136,16 @@ nav {
   color: #2196f3;
 }
 
+.envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+}
+
 .all-order {
   background-color: #2f303a;
   background-image: linear-gradient(
@@ -214,8 +224,31 @@ nav {
   display: block;
   content: "";
   height: 70px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
   outline: 1px solid red;
 }
+
+.icon-antenna::before {
+  background-image: url(../images/antenna1.jpg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock1.jpg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram1.jpg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut1.jpg);
+}
+
 .principles {
   font-size: 14px;
   line-height: 1.71;
