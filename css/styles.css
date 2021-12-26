@@ -365,8 +365,34 @@ div h3 {
   padding-bottom: 30px;
 }
 
+.connecting {
+  margin-top: 16px;
+  margin-left: 10px;
+
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.link-svg {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
 .card-net-item {
   fill: var(--second-color-text);
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.card-net-item:hover {
+  fill: var(--main-color-text-darkbackground);
 }
 
 .clients-list {
@@ -464,12 +490,6 @@ div h3 {
   justify-content: center;
   align-content: center;
 }
-.connecting {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
 
 .nets {
   display: flex;
@@ -479,10 +499,9 @@ div h3 {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .nets:hover {
   background-color: #2196f3;
-}
-.link-svg {
 }
 
 .net-item {
@@ -564,6 +583,10 @@ div h3 {
   display: block;
   list-style-type: none;
 }
+.all-projects:hover {
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .set-projects-title {
   width: 370px;
   padding: 20px 24px;
