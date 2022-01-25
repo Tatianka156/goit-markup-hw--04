@@ -121,11 +121,6 @@ nav {
   margin-left: 30px;
 }
 
-.envelope,
-.smartphone {
-  margin-right: 10px;
-  fill: var(--second-color-text);
-}
 .link-contact {
   font-weight: 500;
   font-size: 14px;
@@ -153,12 +148,14 @@ nav {
   width: 16px;
   height: 12px;
   fill: currentColor;
+  margin-right: 10px;
 }
 
 .smartphone {
   width: 10px;
   height: 16px;
   fill: currentColor;
+  margin-right: 10px;
 }
 
 .all-order {
@@ -221,6 +218,7 @@ nav {
 
 .list-principles {
   display: flex;
+
   flex-wrap: nowrap;
 }
 
@@ -235,32 +233,19 @@ nav {
   margin-left: var(--card-set-gap);
 }
 
-.oldsection::before {
-  display: block;
-  content: "";
-  height: 70px;
+.icon-link {
   background-color: #f5f4fa;
-  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
   border-radius: 4px;
-
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/antenna1.jpg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock1.jpg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram1.jpg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut1.jpg);
+.item-icon {
+  display: flex;
 }
 
 .principles {
@@ -386,6 +371,10 @@ div h3 {
   color: var(--main-color-text-darkbackground);
 }
 
+.nets + .nets {
+  margin-left: 10px;
+}
+
 .link-svg {
   width: 44px;
   height: 44px;
@@ -397,8 +386,6 @@ div h3 {
 }
 
 .card-net-item {
-  width: 20px;
-  height: 20px;
   display: flex;
   fill: currentColor;
 }
@@ -422,7 +409,6 @@ div h3 {
 }
 .clients {
   cursor: pointer;
-  display: inline-block;
   margin: 0;
   padding: 0;
   border: 1px solid #afb1b8;
@@ -430,22 +416,22 @@ div h3 {
   height: 92px;
   background-color: var(--main-background-color);
   border-radius: 4px;
+  color: #afb1b8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients:hover,
 .clients:focus {
   border: 1px solid #2196f3;
+  color: #2196f3;
 }
 
 .clients-logo {
-  width: 106px;
-  height: 60px;
-  fill: #afb1b8;
-}
-
-.clients-logo:hover,
-.clients-logo:focus {
-  fill: #2196f3;
+  fill: currentColor;
+  display: flex;
 }
 
 .common {
