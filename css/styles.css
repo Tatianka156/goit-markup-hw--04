@@ -110,12 +110,20 @@ nav {
   margin-left: auto;
 }
 
+.each-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-background-color);
+}
+
 .contact .each-contact + .each-contact {
   margin-left: 30px;
 }
 
 .envelope,
 .smartphone {
+  margin-right: 10px;
   fill: var(--second-color-text);
 }
 .link-contact {
@@ -129,10 +137,9 @@ nav {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.envelope:focus,
-.envelope:hover,
-.smartphone:focus,
-.smartphone:hover,
+
+.each-contact:focus,
+.each-contact:hover,
 .link:hover,
 .link:focus,
 .link-contact:focus,
@@ -142,17 +149,18 @@ nav {
 .footer-contact:focus,
 .footer-contact:hover {
   color: #2196f3;
-  fill: #2196f3;
 }
 
 .envelope {
   width: 16px;
   height: 12px;
+  fill: currentColor;
 }
 
 .smartphone {
   width: 10px;
   height: 16px;
+  fill: currentColor;
 }
 
 .all-order {
@@ -375,9 +383,13 @@ div h3 {
   align-content: center;
 }
 
-.nets:hover {
+.nets:focus,
+.nets:hover,
+.link-svg:focus,
+.link-svg:hover {
   background-color: #2196f3;
   border-radius: 50%;
+  fill: #ffffff;
 }
 
 .link-svg {
@@ -396,7 +408,8 @@ div h3 {
   display: flex;
 }
 
-.card-net-item:hover {
+.card-net-item:hover,
+.card-net-item:focus {
   fill: var(--main-color-text-darkbackground);
 }
 
@@ -433,7 +446,8 @@ div h3 {
   fill: #afb1b8;
 }
 
-.clients-logo:hover {
+.clients-logo:hover,
+.clients-logo:focus {
   fill: #2196f3;
 }
 
@@ -498,6 +512,7 @@ div h3 {
   min-width: 231px;
   margin-top: 9px;
 }
+
 .footer-nets-links {
   display: flex;
   flex-direction: column;
@@ -543,6 +558,7 @@ div h3 {
   display: flex;
 }
 
+.footer-link-svg:focus,
 .footer-link-svg:hover {
   background-color: #2196f3;
   border-radius: 50%;
@@ -555,7 +571,8 @@ div h3 {
   margin-left: 10px;
 }
 
-.nets:hover {
+.nets:hover,
+.nets:focus {
   background-color: #2196f3;
 }
 
