@@ -393,24 +393,21 @@ div h3 {
   justify-content: center;
   align-content: center;
   align-items: center;
-
-  fill: #afb1b8;
+  color: #afb1b8;
 }
 
-.nets:focus,
-.nets:hover,
+.card-net-item {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  fill: currentColor;
+}
+
 .link-svg:hover,
 .link-svg:focus {
   background-color: #2196f3;
   color: var(--main-color-text-darkbackground);
   border-radius: 50%;
-}
-
-.card-net-item {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
-  display: flex;
 }
 
 .clients-list {
