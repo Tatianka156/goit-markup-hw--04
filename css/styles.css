@@ -138,8 +138,6 @@ nav {
   padding-bottom: 32px;
 }
 
-.each-contact:focus,
-.each-contact:hover,
 .link:hover,
 .link:focus,
 .link-contact:focus,
@@ -383,13 +381,9 @@ div h3 {
   align-content: center;
 }
 
-.nets:focus,
-.nets:hover,
-.link-svg:focus,
-.link-svg:hover {
-  background-color: #2196f3;
-  border-radius: 50%;
-  fill: #ffffff;
+.nets {
+  background-color: var(--main-background-color);
+  color: var(--main-color-text-darkbackground);
 }
 
 .link-svg {
@@ -399,18 +393,24 @@ div h3 {
   justify-content: center;
   align-content: center;
   align-items: center;
+
+  fill: #afb1b8;
+}
+
+.nets:focus,
+.nets:hover,
+.link-svg:hover,
+.link-svg:focus {
+  background-color: #2196f3;
+  color: var(--main-color-text-darkbackground);
+  border-radius: 50%;
 }
 
 .card-net-item {
-  fill: var(--second-color-text);
+  fill: currentColor;
   width: 20px;
   height: 20px;
   display: flex;
-}
-
-.card-net-item:hover,
-.card-net-item:focus {
-  fill: var(--main-color-text-darkbackground);
 }
 
 .clients-list {
@@ -569,11 +569,6 @@ div h3 {
   text-align: center;
 
   margin-left: 10px;
-}
-
-.nets:hover,
-.nets:focus {
-  background-color: #2196f3;
 }
 
 .button {
