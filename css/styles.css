@@ -111,9 +111,6 @@ nav {
 }
 
 .each-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--main-background-color);
 }
 
@@ -131,6 +128,10 @@ nav {
   list-style-type: none;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .link:hover,
@@ -224,9 +225,8 @@ nav {
 
 .list-principles > .oldsection {
   flex-basis: calc(100% / 4);
-  min-width: 270px;
+  width: 270px;
   list-style-type: none;
-  padding: 10px;
 }
 
 .list-principles .oldsection + .oldsection {
@@ -235,7 +235,6 @@ nav {
 
 .icon-link {
   background-color: #f5f4fa;
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   display: flex;
@@ -358,7 +357,6 @@ div h3 {
 
 .connecting {
   margin-top: 16px;
-  margin-left: 10px;
 
   list-style-type: none;
   display: flex;
@@ -497,8 +495,7 @@ div h3 {
 }
 
 .footer-nets-links {
-  display: flex;
-  flex-direction: column;
+  text-align: left;
   margin-left: 70px;
 }
 
@@ -506,17 +503,12 @@ div h3 {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
-
-  display: block;
-  width: 206px;
 }
 
 .join {
   margin-top: 16px;
-  margin-left: 10px;
-
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -550,7 +542,9 @@ div h3 {
 .footer-nets {
   display: flex;
   text-align: center;
+}
 
+.footer-nets + .footer-nets {
   margin-left: 10px;
 }
 
