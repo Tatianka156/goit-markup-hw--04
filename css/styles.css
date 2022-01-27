@@ -90,7 +90,7 @@ nav {
   margin-right: 0px;
 }
 
-.navigate-class .link {
+.link {
   color: var(--main-color-text);
   background-color: var(--main-background-color);
   font-weight: 500;
@@ -103,6 +103,10 @@ nav {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.current {
+  color: #2196f3;
 }
 
 .contact {
@@ -555,7 +559,6 @@ div h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color-text);
   background: #f5f4fa;
@@ -606,14 +609,13 @@ div h3 {
   align-content: center;
   justify-content: center;
 
-  margin-top: 50px;
   margin-left: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
 
 .card-set > .all-projects {
   flex-basis: calc(100% / 3 - 30px);
-  margin-bottom: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
 }
 
@@ -627,7 +629,8 @@ div h3 {
   text-decoration: none;
 }
 
-.shadow:hover {
+.shadow:hover,
+.shadow:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
